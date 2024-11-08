@@ -1,0 +1,46 @@
+/* NavigationBar.css */
+
+/* Overall layout of the navigation bar and content */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height */
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for links */
+.link:hover {
+  background-color: #575757;
+  color: #f0f0f0;
+  border-radius: 4px;
+}
+
+/* Content area where the routed components will be displayed */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}
+
+/* Additional styling for the body and text */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+

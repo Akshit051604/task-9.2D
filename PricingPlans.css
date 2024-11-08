@@ -1,0 +1,100 @@
+/* src/PricingPlans.css */
+
+.pricing-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.plans-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ff6f61;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.plan-button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+  background-color: #e05c4f;
+}
+
+.premium {
+  background-color: #f9f9f9;
+  border: 2px solid #ff6f61;
+}
+
+.premium-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.premium-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .plans-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,285 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f7fb;
+  color: #3c3c3c;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Main App Container */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f7fb;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4e73df;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+}
+
+.navbar .menu {
+  display: flex;
+}
+
+.navbar .menu a {
+  margin: 0 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #4e73df;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Routes Container */
+.routes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Pricing Plans */
+.pricing-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.pricing-card .price {
+  font-size: 40px;
+  color: #4e73df;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.pricing-card .features {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.pricing-card .pricing-btn {
+  background-color: #4e73df;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-card .pricing-btn:hover {
+  background-color: #2e59d9;
+}
+
+/* Payment Page */
+.payment-page-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-page-container h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.payment-page-container .payment-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.payment-page-container .payment-form input:focus {
+  border-color: #4e73df;
+  outline: none;
+}
+
+.payment-page-container .payment-form button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-page-container .payment-form button:hover {
+  background-color: #2e59d9;
+}
+
+/* Movie Cards */
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.movie-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 32%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.movie-card .movie-info {
+  padding: 20px;
+}
+
+.movie-card .movie-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.movie-card .movie-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .movies-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .movie-card {
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .menu {
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .menu a {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    padding: 25px;
+  }
+
+  .payment-page-container {
+    padding: 30px;
+  }
+
+  .payment-page-container h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-card {
+    width: 100%;
+  }
+
+  .pricing-card {
+    padding: 20px;
+  }
+
+  .payment-page-container {
+    padding: 20px;
+  }
+}
